@@ -4,6 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KKR Green City - Eluru</title>
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark");
+  <button onclick="toggleDark()" style="position:absolute; right:20px; top:20px;">🌙</button>
+}
+
+/* SCROLL ANIMATION */
+let elements = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+  elements.forEach(el => {
+    let position = el.getBoundingClientRect().top;
+    let screen = window.innerHeight;
+
+    if(position < screen - 100){
+      el.classList.add("show");
+    }
+  });
+});
+</script>
 
 <style>
 body {
@@ -263,3 +283,10 @@ footer {
 
 </body>
 </html>
+
+<fade>
+  <section class="hero fade">
+<section class="section fade">
+<section class="section gallery fade">
+<section class="section video fade">
+</fade>
