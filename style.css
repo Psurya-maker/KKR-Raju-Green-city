@@ -115,4 +115,37 @@ body {
 
 .feature-box h4 {
   font-size: 16px;
+
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark header,
+.dark footer {
+  background: #000;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+/* LIGHT ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SMALL HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
 }
