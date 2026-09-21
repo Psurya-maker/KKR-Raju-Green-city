@@ -21,7 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260921-2">
+  <link rel="icon" href="images/loading-screen.jpg" type="image/jpeg">
 
   <!-- Preload High-Resolution Loading Screen Asset -->
   <link rel="preload" href="images/loading-screen.jpg" as="image">
@@ -50,7 +51,7 @@
       </div>
 
       <h1 class="loading-title">KKR GREEN CITY</h1>
-      <div class="loading-location">ELURU, ANDHRA PRADESH</div>
+      <div class="loading-location">ELURU</div>
       <p class="loading-sub">PREMIUM LIVING IN ELURU</p>
 
       <!-- Progress Line Indicator -->
@@ -300,10 +301,10 @@
             </div>
 
             <div class="gallery-cards-row">
-              <!-- Card 1: Natural Beauty (4K) -->
-              <div class="gallery-item-card" data-src="gallery-natural-beauty.jpg" data-caption="Natural Beauty - Green Landscape & Sunshine">
+              <!-- Card 1: Natural Beauty -->
+              <div class="gallery-item-card" data-src="download.jpg" data-caption="Natural Beauty - Green Landscape & Sunshine">
                 <div class="gallery-item-thumb">
-                  <img src="gallery-natural-beauty.jpg" alt="Natural beauty landscape at KKR Green City" loading="lazy">
+                  <img src="download.jpg" alt="Natural beauty landscape at KKR Green City" loading="lazy">
                 </div>
                 <div class="gallery-item-caption">
                   <span>Natural Beauty</span>
@@ -311,10 +312,10 @@
                 </div>
               </div>
 
-              <!-- Card 2: Project View (4K) -->
-              <div class="gallery-item-card" data-src="gallery-project-view.jpg" data-caption="Project View - Residential Building Community">
+              <!-- Card 2: Project View -->
+              <div class="gallery-item-card" data-src="images.jpg" data-caption="Project View - Residential Building Community">
                 <div class="gallery-item-thumb">
-                  <img src="gallery-project-view.jpg" alt="Residential building community at KKR Green City" loading="lazy">
+                  <img src="images.jpg" alt="Residential building community at KKR Green City" loading="lazy">
                 </div>
                 <div class="gallery-item-caption">
                   <span>Project View</span>
@@ -382,7 +383,6 @@
                   <span class="loc-bullet-icon">📍</span>
                   <div>
                     <strong>Eluru, Andhra Pradesh</strong>
-                    <span>Near Mini Bypass</span>
                   </div>
                 </div>
 
@@ -390,7 +390,6 @@
                   <span class="loc-bullet-icon">🌾</span>
                   <div>
                     <strong>Surrounded by green paddy fields</strong>
-                    <span>Natural fresh breeze & calm setting</span>
                   </div>
                 </div>
 
@@ -398,7 +397,6 @@
                   <span class="loc-bullet-icon">🛣️</span>
                   <div>
                     <strong>Fresh air &amp; wide roads</strong>
-                    <span>Nearby bus transport access</span>
                   </div>
                 </div>
 
@@ -579,6 +577,10 @@
               </span>
               <a href="https://wa.me/919652125555" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">+91 9652125555</a>
             </li>
+            <li class="footer-contact-item">
+              <span class="footer-icon-wrap" aria-hidden="true">&#9993;</span>
+              <a href="mailto:hisurya424@gmail.com" aria-label="Email KKR Green City">hisurya424@gmail.com</a>
+            </li>
           </ul>
         </div>
 
@@ -693,8 +695,8 @@
           setTimeout(() => {
             clearInterval(progressInterval);
             if (progressBar) progressBar.style.width = '100%';
-            setTimeout(dismissLoader, 250);
-          }, 1400);
+            setTimeout(dismissLoader, 200);
+          }, 200);
         });
 
         // Failsafe timeout at 2.4s max
@@ -801,8 +803,8 @@
       }
 
       const galleryItems = [
-        { src: 'gallery-natural-beauty.jpg', caption: 'Natural Beauty - Green Landscape & Sunshine' },
-        { src: 'gallery-project-view.jpg', caption: 'Project View - Residential Building Community' }
+        { src: 'download.jpg', caption: 'Natural Beauty - Green Landscape & Sunshine' },
+        { src: 'images.jpg', caption: 'Project View - Residential Building Community' }
       ];
       let currentGalleryIdx = 0;
 
@@ -834,7 +836,7 @@
 
       if (viewAllGalleryBtn) {
         viewAllGalleryBtn.addEventListener('click', () => {
-          openLightbox('gallery-natural-beauty.jpg', 'Natural Beauty - Green Landscape & Sunshine');
+          openLightbox('download.jpg', 'Natural Beauty - Green Landscape & Sunshine');
         });
       }
 
